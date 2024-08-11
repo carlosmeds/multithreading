@@ -1,0 +1,1 @@
+GET http://localhost:8000/ceps/80240050 HTTP/1.1
