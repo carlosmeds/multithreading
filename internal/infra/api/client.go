@@ -24,5 +24,8 @@ func GetCepFromApi(url string, ch chan map[string]interface{}) {
 		panic(err)
 	}
 
+	jsonResponse["api"] = url
+	fmt.Println("Response from", url)
+
 	ch <- jsonResponse
 }
